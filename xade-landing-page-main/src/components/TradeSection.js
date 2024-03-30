@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import tradeVideo from './trade.mp4';
+import tradeVideo from './background.mp4';
 const TradeSection = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -54,20 +54,30 @@ const TradeSection = () => {
             color: '#949494', // Adjusting for legibility over video
         },
         qrBox: {
-            marginTop: '5%',
+            position: 'fixed',
+            bottom: '50px',
+            right: '60px',
             display: windowWidth < 600 ? 'none' : 'flex',
             flexDirection: windowWidth < 600 ? 'column' : 'row',
             alignItems: 'center',
             justifyContent: 'center',
-            zIndex: 1, // Above video
-        },   
+            zIndex: 10,
+            border: '1px solid #999', // White border
+            backgroundColor: 'rgba(0, 0, 0, 0.2)', // Semi-transparent white background for the glassy effect
+            backdropFilter: 'blur(10px)', // Blur effect for the glassy background
+            // borderRadius: '10px', // Optional: adds rounded corners for a smoother look
+            padding: '15px', // Optional: provides some spacing inside the qrBox
+        },
+        
         qrImage: {
             marginRight: windowWidth < 600 ? '0' : '20px',
+            width:'80px',
+            height:'80px'
         },
         downloadText: {
             fontFamily: "'Benzin-Medium'",
-            fontSize: windowWidth < 600 ? 20 : 30,
-            textAlign: 'left',
+            fontSize: windowWidth < 600 ? 20 : 20,
+            textAlign: 'center',
             color: '#FFF', // Adjusting for legibility over video
         },
         downloadButton: {
@@ -92,10 +102,10 @@ const TradeSection = () => {
 
     return (
         <div style={styles.container}>
-            <video autoPlay muted loop style={styles.videoBackground}>
+            {/* <video autoPlay muted loop style={styles.videoBackground}>
             <source src={tradeVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
             <div style={styles.header}>
                 THE ULTIMATE<br />TRADING<br />EXPERIENCE
             </div>
@@ -103,9 +113,9 @@ const TradeSection = () => {
                 {subheaderText}
             </div>
             <div style={styles.qrBox}>
-                <img src="https://res.cloudinary.com/xade-finance/image/upload/v1711734979/wntidrznpivytj7zafrq.png" alt="QR Code" style={styles.qrImage} />
+                <img src="https://res.cloudinary.com/xade-finance/image/upload/v1711794211/jgrtyx4wisomxtfmnovt.png" alt="QR Code" style={styles.qrImage} />
                 <div style={styles.downloadText}>
-                    DOWNLOAD<br/>NOW
+                    DOWNLOAD<br/>XADE 2.0
                 </div>
             </div>
             <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xade.finance/', '_blank', 'noopener,noreferrer')}>
