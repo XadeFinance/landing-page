@@ -118,7 +118,7 @@ const TradeSection = () => {
                     DOWNLOAD<br/>XADE 2.0
                 </div>
             </div>
-            <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xade.finance/', '_blank', 'noopener,noreferrer')}>
+            <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xadefinance', '_blank', 'noopener,noreferrer')}>
     Download Now
 </button>
 
