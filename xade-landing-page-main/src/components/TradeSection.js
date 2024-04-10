@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import tradeVideo from './trade.mp4'; // Ensure this path is correct
-import bg from './static.png'; // Ensure this path is correct
+import bg from './bg.png'; // Ensure this path is correct
 
 const TradeSection = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -128,7 +128,7 @@ const TradeSection = () => {
                     Your browser does not support the video tag.
                 </video>
             ) : (
-                <img src={'https://res.cloudinary.com/xade-finance/image/upload/v1711995417/gjgl9txeskhoaqp6t4yo.png'} style={styles.backgroundImage} alt="Background" />
+                <img src={'https://res.cloudinary.com/xade-finance/image/upload/v1712746367/xu5yw8qekgyvoouklqsp.png'} style={styles.backgroundImage} alt="Background" />
             )}
             <div style={styles.overlay}></div>
             <div style={styles.header}>THE ULTIMATE<br />TRADING<br />EXPERIENCE</div>
