@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.org.xadefinance",
+      "sha256_cert_fingerprints": [
+        "3E:8F:9A:6D:95:46:8E:43:CA:67:02:CC:DB:D6:37:48:B9:5E:2B:D4:4B:DB:D7:1B:B2:95:00:FB:D0:F9:27:1F"
+      ]
+    }
+  }
+]
