@@ -68,7 +68,7 @@ function App() {
 
       {/* <NFT /> */}
       {/* <BetterSection /> */}
-      {/* <Stats /> */}
+      <Stats />
 
       {/* <Security /> */}
       {/* <FAQ /> */}

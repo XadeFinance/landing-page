@@ -3,7 +3,7 @@ import "../styles/better.css";
 import React, { useState, useEffect, useRef } from "react";
 const App = () => {
   return (
-    <div className="lol" style={{ marginTop: "3rem",backgroundColor:"purple" }}>
+    <div className="lol" style={{ marginTop: "3rem",backgroundColor:"black" }}>
       <div>
         <div className="more-features-center">
           <div className="more-features-top-elements">
@@ -25,7 +25,7 @@ const App = () => {
                   className="dabbang"
                 /> */}
               <div className="betterhead v2">
-                <p>$1mil+</p>
+                <p>$5mil+</p>
               </div>
               <p className="bettercontent" style={{ color: "#7b7b7b" }}>
                 Transaction volume
@@ -40,7 +40,7 @@ const App = () => {
                 <p>10k+</p>
               </div>
               <p className="bettercontent" style={{ color: "#7b7b7b" }}>
-                Daily active users
+                Active users
               </p>
               <br />
               <br />
