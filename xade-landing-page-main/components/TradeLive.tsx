@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, CSSProperties } from 'react';
 import Image from 'next/image';
 import illustration from '../assets/illustration.png';
 import "../styles/style.css";
@@ -34,16 +34,16 @@ const TradeLive = () => {
         height: 'auto',
     };
 
-    const textStyle = {
+    const textStyle: CSSProperties = {
         fontFamily: 'SK-Modernist-Bold',
         fontSize: isMobile ? '40px' : '100px',
         textAlign: 'center',
     };
 
-    const subTextStyle = {
+    const subTextStyle: CSSProperties = {
         fontSize: isMobile ? '14px' : '24px',
         textAlign: 'center',
-        color:'#A8A8A8',
+        color: '#A8A8A8',
         fontFamily: 'SK-Modernist-Regular',
     };
 
