@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import "../styles/style.css";
 import BlogSection from "./BlogSection";
 
@@ -83,7 +84,7 @@ export default function FAQ() {
       <div className="topText" style={{ color: "#DADADA", fontsize: "0.1rem" }}>
         <span>
           {" "}
-          It's time to unleash a new era of finance with Xade where we provide
+          It&apos;s time to unleash a new era of finance with Xade where we provide
           the only alternative to traditional banks powered by innovative and
           advanced DeFi protocols
         </span>
@@ -100,16 +101,18 @@ export default function FAQ() {
         }}
       >
         <a href="https://play.google.com/store/apps/details?id=com.org.xadefinance">
-          <img
+          <Image
             src="/Media/Group.png"
-            style={{ width: "90%" }}
+            width={250}
+            height={100}
             alt="Google play image"
           />
         </a>
         <a href="https://testflight.apple.com/join/ppdLa9dl">
-          <img
+          <Image
             src="/Media/appstore.png"
-            style={{ width: "90%" }}
+            width={250}
+            height={100}
             alt="AppStore image"
           />
         </a>
@@ -121,7 +124,7 @@ export default function FAQ() {
 <div class="slider">
   <div class="slide-track">
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
         height="100"
         width="250"
@@ -129,7 +132,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
         height="100"
         width="250"
@@ -137,7 +140,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
         height="100"
         width="250"
@@ -145,7 +148,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
         height="100"
         width="250"
@@ -153,7 +156,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
         height="100"
         width="250"
@@ -161,7 +164,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
         height="100"
         width="250"
@@ -169,7 +172,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
         height="100"
         width="250"
@@ -177,7 +180,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
         height="100"
         width="250"
@@ -185,7 +188,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
         height="100"
         width="250"
@@ -193,7 +196,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
         height="100"
         width="250"
@@ -201,7 +204,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
         height="100"
         width="250"
@@ -209,7 +212,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
         height="100"
         width="250"
@@ -217,7 +220,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
         height="100"
         width="250"
@@ -225,7 +228,7 @@ export default function FAQ() {
       />
     </div>
     <div class="slide">
-      <img
+      <Image
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
         height="100"
         width="250"

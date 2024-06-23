@@ -66,6 +66,8 @@ const CardItem = forwardRef((props, ref) => {
   );
 });
 
+CardItem.displayName = "CardItem";
+
 function ExploreFeatures() {
   const headerRef = useRef();
   const headerTextRef = useRef();
@@ -171,5 +173,7 @@ function ExploreFeatures() {
     </>
   );
 }
+
+ExploreFeatures.displayName = "ExploreFeatures";
 
 export default ExploreFeatures;

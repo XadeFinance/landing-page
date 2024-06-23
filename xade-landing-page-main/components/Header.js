@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Image from 'next/image'; // Import Image component
 import "../styles/style.css";
 
 export default function Header() {
@@ -28,10 +29,11 @@ export default function Header() {
                 navbarCollapse.classList.toggle("show");
               }}
             >
-              <img
+              <Image
                 src="/Media/menu.png"
                 alt="menu icon"
-                style={{ width: "24px", height: "24px" }}
+                width={24}
+                height={24}
               />
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
