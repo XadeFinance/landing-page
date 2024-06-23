@@ -14,7 +14,7 @@ export default function Footer() {
               </div>
               <br></br>
               <p className="footerx" style={{ textAlign: 'center' }}>
-                <p className="footerx" style={{ textAlign: 'left', fontFamily: 'Regular', color: '#808080' }}>Xade is compeletely non-custodial and never takes control over the user's funds while transactions are publicly available</p>
+                <p className="footerx" style={{ textAlign: 'left', fontFamily: 'Regular', color: '#808080' }}>Xade is compeletely non-custodial and never takes control over the user&apos;s funds while transactions are publicly available</p>
                 <br></br>
                 <p className="footerx" style={{ textAlign: 'left', fontFamily: 'Regular', lineHeight: '0.4rem' }}> <p style={{ textAlign: 'left', fontFamily: 'SemiBold', fontSize: '1.2 rem' }}>CONTACT US</p>support@xade.finance</p>
                 <p className="footerx" style={{ textAlign: 'left', fontFamily: 'Regular', lineHeight: '0.4rem', color: '#808080' }}>Unit No. 810, Gold Crest Executive,</p>

@@ -1,5 +1,6 @@
 import "./styles.css";
 import React from "react";
+import Image from 'next/image'; // Import Image component
 import "../styles/style.css";
 
 const CredSection = () => {
@@ -7,10 +8,12 @@ const CredSection = () => {
     <>
       <section className="container" id="container4">
         <div className="left-half">
-          <img
+          <Image
             className="credimg"
             src="/Media/deposit.png"
             alt="image"
+            width={500} // Adjust width as needed
+            height={500} // Adjust height as needed
           />
         </div>
         <div className="right-half" style={{ display: "flex", alignItems: "center" }}>
@@ -79,19 +82,23 @@ const CredSection = () => {
           </div>
         </div>
         <div className="right-half">
-          <img
+          <Image
             className="credimg"
             src="/Media/markets.png"
             alt="payment image"
+            width={500} // Adjust width as needed
+            height={500} // Adjust height as needed
           />
         </div>
       </section>
       <section className="container" id="container4">
         <div className="left-half">
-          <img
+          <Image
             className="credimg"
             src="/Media/trade.png"
             alt="image"
+            width={500} // Adjust width as needed
+            height={500} // Adjust height as needed
           />
         </div>
         <div className="right-half">
@@ -160,10 +167,12 @@ const CredSection = () => {
           </div>
         </div>
         <div className="right-half">
-          <img
+          <Image
             className="credimg"
             src="/Media/portfolio.png"
             alt="image"
+            width={500} // Adjust width as needed
+            height={500} // Adjust height as needed
           />
         </div>
       </section>

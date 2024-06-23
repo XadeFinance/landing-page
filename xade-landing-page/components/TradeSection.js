@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image'; // Import Image component
 import tradeVideo from './trade.mp4'; // Ensure this path is correct
 import bg from './bg.png'; // Ensure this path is correct
 
@@ -152,7 +153,7 @@ const TradeSection = () => {
           Your browser does not support the video tag.
         </video>
       ) : (
-        <img
+        <Image
           src={'https://res.cloudinary.com/xade-finance/image/upload/v1712746367/xu5yw8qekgyvoouklqsp.png'}
           style={styles.backgroundImage}
           alt="Background"
@@ -162,7 +163,7 @@ const TradeSection = () => {
       <div style={styles.header}>THE ULTIMATE<br />TRADING<br />EXPERIENCE</div>
       <div style={styles.subheader}>{subheaderText}</div>
       <div style={styles.qrBox}>
-        <img src="https://res.cloudinary.com/xade-finance/image/upload/v1712745024/yfe2g76jqeqz1mcohas9.png" alt="QR Code" style={styles.qrImage} />
+        <Image src="https://res.cloudinary.com/xade-finance/image/upload/v1712745024/yfe2g76jqeqz1mcohas9.png" alt="QR Code" style={styles.qrImage} />
         <div style={styles.downloadText}>DOWNLOAD<br/>XADE 2.0</div>
       </div>
       <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xadefinance', '_blank', 'noopener,noreferrer')}>
