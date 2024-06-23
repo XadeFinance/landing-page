@@ -10,13 +10,7 @@ const App = () => {
         <div className="more-features-center">
           <div className="more-features-top-elements">
             <div className="more-features-element">
-              <Image
-                src="https://www.xade.finance/Media/uxicon.svg"
-                className="dabbang"
-                alt="UX Icon"
-                width={50} // Adjust width as needed
-                height={50} // Adjust height as needed
-              />
+            
               <div className="betterhead v1">
                 <p>12k+</p>
               </div>
@@ -25,13 +19,7 @@ const App = () => {
               </p>
             </div>
             <div className="more-features-element">
-              <Image
-                src="https://www.xade.finance/Media/innovative.svg"
-                className="dabbang"
-                alt="Innovative Icon"
-                width={50} // Adjust width as needed
-                height={50} // Adjust height as needed
-              />
+           
               <div className="betterhead v2">
                 <p>$5mil+</p>
               </div>
@@ -40,13 +28,7 @@ const App = () => {
               </p>
             </div>
             <div className="more-features-element">
-              <Image
-                src="https://www.xade.finance/Media/world icon.svg"
-                className="dabbang"
-                alt="World Icon"
-                width={50} // Adjust width as needed
-                height={50} // Adjust height as needed
-              />
+            
               <div className="betterhead v3">
                 <p>10k+</p>
               </div>

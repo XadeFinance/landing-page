@@ -41,6 +41,9 @@ const TradeSection = () => {
       alignItems: 'center',
       justifyContent: 'center',
       overflow: 'hidden',
+      backgroundImage: `url('https://res.cloudinary.com/xade-finance/image/upload/v1712746367/xu5yw8qekgyvoouklqsp.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
     },
     overlay: {
       position: 'absolute',
@@ -50,15 +53,6 @@ const TradeSection = () => {
       height: '100%',
       backgroundColor: 'transparent',
       zIndex: 1, // Make sure overlay is above the video/image but below the text
-    },
-    backgroundImage: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      zIndex: '0',
     },
     videoBackground: {
       position: 'absolute',
@@ -152,18 +146,12 @@ const TradeSection = () => {
           <source src={tradeVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      ) : (
-        <Image
-          src={'https://res.cloudinary.com/xade-finance/image/upload/v1712746367/xu5yw8qekgyvoouklqsp.png'}
-          style={styles.backgroundImage}
-          alt="Background"
-        />
-      )}
+      ) : null}
       <div style={styles.overlay}></div>
       <div style={styles.header}>THE ULTIMATE<br />TRADING<br />EXPERIENCE</div>
       <div style={styles.subheader}>{subheaderText}</div>
       <div style={styles.qrBox}>
-        <Image src="https://res.cloudinary.com/xade-finance/image/upload/v1712745024/yfe2g76jqeqz1mcohas9.png" alt="QR Code" style={styles.qrImage} />
+        <Image src="https://res.cloudinary.com/xade-finance/image/upload/v1712745024/yfe2g76jqeqz1mcohas9.png" alt="QR Code" style={styles.qrImage} width={80} height={80} />
         <div style={styles.downloadText}>DOWNLOAD<br/>XADE 2.0</div>
       </div>
       <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xadefinance', '_blank', 'noopener,noreferrer')}>
