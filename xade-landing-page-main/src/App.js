@@ -15,6 +15,7 @@ import CoinSection from "./components/CoinsSection";
 import Stats from "./components/Stats";
 import Security from "./components/Security";
 import TradeSection from "./components/TradeSection";
+import TradeLive from "./components/TradeLive";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -64,14 +65,15 @@ function App() {
         </span>
       </div> */}
       <CredSection />
+      <TradeLive/>
       {/* <CardSection></CardSection> */}
 
       {/* <NFT /> */}
       {/* <BetterSection /> */}
       <Stats />
 
-      {/* <Security /> */}
-      {/* <FAQ /> */}
+      <Security />
+      <FAQ />
 
       {/* <BottomSection /> */}
 

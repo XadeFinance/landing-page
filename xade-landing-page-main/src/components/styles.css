@@ -10,7 +10,17 @@
   font-family: Regular;
   src: url("https://res.cloudinary.com/xade-finance/raw/upload/v1684691514/Euclid_Circular_A_Regular_dwaevi.ttf");
 }
+@font-face {
+  font-family: 'SK-Modernist-Regular';
+  src: url("https://res.cloudinary.com/xade-finance/raw/upload/v1719138135/qzwyfg5vkpnfn7uwqvnh.otf");
 
+
+}
+
+@font-face {
+  font-family: 'SK-Modernist-Bold';
+  src: url("https://res.cloudinary.com/xade-finance/raw/upload/v1719138092/hm1cntxvtfazbfhkh4ie.otf");
+}
 @font-face {
   font-family: Benzin-Bold;
   src: url("https://res.cloudinary.com/xade-finance/raw/upload/v1684692428/Benzin-Bold_tbqbua.ttf");

@@ -5,7 +5,7 @@ import BlogSection from "./BlogSection";
 export default function FAQ() {
   return (
     <>
-      {/* <div id="FAQ-Section" className="faqs">
+      <div id="FAQ-Section" className="faqs">
         <div>
           <h2 className="faqmain">Frequently asked questions</h2>
         </div>
@@ -74,13 +74,13 @@ export default function FAQ() {
             </span>
           </div>
         </div>
-      </div> */}
-      {/* <BlogSection /> */}
-      <div className="header" style={{ marginTop: "5%" }}>
-        <h2 style={{ fontSize: "43.2px" }}> Join the revolution </h2>
       </div>
-      <br />
-      <div className="topText" style={{ color: "#DADADA", fontsize: "0.1rem" }}>
+      {/* <BlogSection /> */}
+      {/* <div className="header" style={{ marginTop: "5%" }}>
+        <h2 style={{ fontSize: "43.2px" }}> Join the revolution </h2>
+      </div> */}
+      {/* <br /> */}
+      {/* <div className="topText" style={{ color: "#DADADA", fontsize: "0.1rem" }}>
         <span>
           {" "}
           It's time to unleash a new era of finance with Xade where we provide
@@ -113,7 +113,7 @@ export default function FAQ() {
             alt="AppStore image"
           />
         </a>
-      </div>
+      </div> */}
     </>
   );
 }
