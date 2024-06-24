@@ -77,11 +77,11 @@ export default function Header() {
                     <a
                       className="nav-link page-scroll"
                       target="_blank"
-                      href="https://discord.gg/VxuKdRRzmN"
+                      href="https://trade.xade.finance"
                       rel="noreferrer"
                     >
                       <div className="tack" style={{ fontFamily: "Regular" }}>
-                        Community
+                        Xade Pro
                       </div>
                     </a>
                   </li>

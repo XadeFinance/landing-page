@@ -73,7 +73,7 @@ function App() {
       <Stats />
 
       <Security />
-      <FAQ />
+      {/* <FAQ /> */}
 
       {/* <BottomSection /> */}
 
