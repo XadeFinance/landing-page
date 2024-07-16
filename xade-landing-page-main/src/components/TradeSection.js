@@ -134,7 +134,7 @@ const TradeSection = () => {
             <div style={styles.header}>THE ULTIMATE<br />TRADING<br />EXPERIENCE</div>
             <div style={styles.subheader}>{subheaderText}</div>
             <div style={styles.qrBox}>
-                <img src="https://res.cloudinary.com/xade-finance/image/upload/v1712745024/yfe2g76jqeqz1mcohas9.png" alt="QR Code" style={styles.qrImage} />
+                <img src="https://res.cloudinary.com/dcrfpsiiq/image/upload/v1721109109/m2agbr4h7y9c74vwf0nv.png" alt="QR Code" style={styles.qrImage} />
                 <div style={styles.downloadText}>DOWNLOAD<br/>XADE 2.0</div>
             </div>
             <button style={styles.downloadButton} onClick={() => window.open('https://bit.ly/xadefinance', '_blank', 'noopener,noreferrer')}>
