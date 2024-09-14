@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/style.css";
 import aiVideo from './ai.mp4'; // Update this path to where your video is located
+import { FaArrowRight } from 'react-icons/fa'; // Add this import
 
-const TradeLive = () => {
+const BetterSection = () => {
     const containerStyle = {
         padding: '5% 0',
         backgroundColor: '#000',
@@ -32,27 +33,32 @@ const TradeLive = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
     const [email, setEmail] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showInput, setShowInput] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
         try {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbxs0tKF3pGko5GKot_Jyc4SL7QLSxM1aD8TS0DfMuPVQg04ds5pnbc6WkybpVAOZgk/exec', {
+            const response = await fetch('http://localhost:3000/api/waitlist', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ email }),
             });
-            const data = await response.json();
-            if (data.result === 'success') {
-                alert('Thank you for joining the waitlist!');
-                setShowPopup(false);
-            } else {
-                throw new Error('Failed to submit');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
+            const data = await response.json();
+            alert('Thank you for joining the waitlist!');
+            setShowPopup(false);
+            setEmail('');
         } catch (error) {
             console.error('Error:', error);
             alert('An error occurred. Please try again.');
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -157,6 +163,41 @@ const TradeLive = () => {
         fontSize: isMobile ? '14px' : '18px'
     };
 
+    const inputContainerStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: isMobile ? '5% auto' : '2% auto',
+        maxWidth: '400px',
+        transition: 'all 0.3s ease',
+    };
+
+    const inputStyle = {
+        flex: 1,
+        padding: '12px 20px',
+        borderRadius: '30px',
+        border: 'none',
+        fontSize: isMobile ? '14px' : '16px',
+        outline: 'none',
+        marginRight: '10px', // Add space between input and button
+    };
+
+    const submitButtonStyle = {
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        background: '#fff',
+        color: '#000',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: 'none',
+        cursor: 'pointer',
+        transition: 'transform 0.3s ease',
+        flexShrink: 0, // Prevent button from shrinking
+        zIndex: 1, // Ensure the button is above the input
+    };
+
     return (
         <div style={containerStyle}>
             <video autoPlay loop muted playsInline style={videoStyle}>
@@ -169,36 +210,33 @@ const TradeLive = () => {
                 <div style={subTextStyle}>
                     Your personal AI powered quant trader
                 </div>
-                <button 
-                    onClick={() => setShowPopup(true)} 
-                    style={buttonStyle}
-                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                >
-                    Join waitlist
-                </button>
-                
-                {showPopup && (
-                    <div style={popupStyle} onClick={handleOverlayClick}>
-                        <div style={popupContentStyle}>
-                            <h2 style={{color: '#fff', fontSize: isMobile ? '24px' : '28px'}}>Join the Waitlist</h2>
-                            <form onSubmit={handleSubmit}>
-                                <input
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your email"
-                                    required
-                                    style={popupInputStyle}
-                                />
-                                <button 
-                                    type="submit"
-                                    style={popupButtonStyle}
-                                >
-                                    Submit
-                                </button>
-                            </form>
-                        </div>
+                {!showInput ? (
+                    <button 
+                        onClick={() => setShowInput(true)} 
+                        style={buttonStyle}
+                        onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                        onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                    >
+                        Join waitlist
+                    </button>
+                ) : (
+                    <div style={inputContainerStyle}>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Enter your email"
+                            required
+                            style={inputStyle}
+                        />
+                        <button 
+                            onClick={handleSubmit}
+                            style={submitButtonStyle}
+                            onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                        >
+                            <FaArrowRight />
+                        </button>
                     </div>
                 )}
             </div>
@@ -206,4 +244,4 @@ const TradeLive = () => {
     );
 };
 
-export default TradeLive;
+export default BetterSection;
