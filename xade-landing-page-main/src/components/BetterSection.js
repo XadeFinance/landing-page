@@ -198,6 +198,10 @@ const BetterSection = () => {
         zIndex: 1, // Ensure the button is above the input
     };
 
+    const handleJoinWaitlist = () => {
+        window.open('https://t.me/xadeofficial', '_blank');
+    };
+
     return (
         <div style={containerStyle}>
             <video autoPlay loop muted playsInline style={videoStyle}>
@@ -210,35 +214,14 @@ const BetterSection = () => {
                 <div style={subTextStyle}>
                     Your personal AI powered quant trader
                 </div>
-                {!showInput ? (
-                    <button 
-                        onClick={() => setShowInput(true)} 
-                        style={buttonStyle}
-                        onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                        onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                    >
-                        Join waitlist
-                    </button>
-                ) : (
-                    <div style={inputContainerStyle}>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Enter your email"
-                            required
-                            style={inputStyle}
-                        />
-                        <button 
-                            onClick={handleSubmit}
-                            style={submitButtonStyle}
-                            onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                        >
-                            <FaArrowRight />
-                        </button>
-                    </div>
-                )}
+                <button 
+                    onClick={handleJoinWaitlist} 
+                    style={buttonStyle}
+                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                >
+                    Join waitlist
+                </button>
             </div>
         </div>
     );
