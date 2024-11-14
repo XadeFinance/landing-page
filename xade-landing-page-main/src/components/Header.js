@@ -81,7 +81,7 @@ export default function Header() {
                       rel="noreferrer"
                     >
                       <div className="tack" style={{ fontFamily: "Regular" }}>
-                        Xade Pro
+                        Xade Exchange
                       </div>
                     </a>
                   </li>
@@ -90,10 +90,10 @@ export default function Header() {
                     <a
                       className="nav-link page-scroll"
                       target="_blank"
-                      href="https://bit.ly/xadefinance"
+                     href="https://ai.xade.finance"
                       rel="noreferrer"
                     >
-                      <div className="greytack">Download App</div>
+                      <div className="greytack">Xade AI</div>
                     </a>
                   </li>
                 </div>
